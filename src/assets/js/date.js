@@ -14,7 +14,7 @@ function getDateArray(date){
             obj.task = JSON.parse(storage.getItem(toStr(date)));
         }
         if(date.getDate() == current.getDate() && date.getMonth() == current.getMonth() && date.getFullYear() == current.getFullYear()){
-            obj2.currentDate = true;
+            obj.currentDate = true;
         }
         obj.date = new Date(date);
         arr.unshift(obj);
